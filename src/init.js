@@ -16,8 +16,8 @@ $(document).ready(function(){
      * to the stage.
      */
     // var dancerMakerFunctionName = 'Dancer';
-    var dancerMakerFunctionName = $(this).data('data-dancer-maker-function-name');
-    console.log($(this).data('data-dancer-maker-function-name'));
+    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    console.log($(this).data('dancer-maker-function-name'));
     debugger;
     var test = new BlinkyDancer(10,10,100);
 
@@ -33,6 +33,13 @@ $(document).ready(function(){
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancer.push(dancer);
   });
+
+  $(".lineUp").on('click',function(event){
+    for(var i = 0; i < window.dancer.length;i++){
+        window.dancer.left = 10;
+    }
+  })
 });
 
