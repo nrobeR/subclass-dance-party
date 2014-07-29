@@ -32,3 +32,31 @@ Dancer.prototype.step = function(){
   setTimeout(function(){self.step()}, self.timeBetweenSteps);
   //debugger;
 }
+
+Dancer.prototype.lineup = function(left) {
+
+  this.setPosition(this.$node.css('top'), left);
+
+}
+
+Dancer.prototype.findDistance = function(target) {
+  //find distance to all dancers from dancer
+  var selfTop = this.$node.css('top');
+  var selfLeft = this.$node.css('left');
+  var targetTop = target.$node.css('top');
+  var targetLeft = target.$node.css('left');
+  return Math.sqrt((selfTop - targetTop)*(selfTop - targetTop) + (selfLeft - targetLeft)*(selfLeft - targetLeft));
+}
+
+Dancer.prototype.findClosest = function(list, n) {
+  //iterate through list and find length between self and each target in the list
+  var distanceList = [];
+  for(var i = 0; i < list.length; i++) {
+    distanceList.push([list[i],this.findDistance(list[i])]);
+  }
+  distanceList.sort(function(){return a[1]-b[1];});
+  //save all the lengths and targets in array
+  //sort the array base on length
+  //return the first n elements of the array
+  return distanceList.splice(0,n);
+}

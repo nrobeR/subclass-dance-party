@@ -29,3 +29,11 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.harddancer{
+  border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+  /*background-image:url(http://i.dailymail.co.uk/i/pix/2013/11/11/article-2500617-007F32C500000258-970_306x423.jpg);*/
+  /*background-size: 100px 100px;*/
+  /*position: absolute;*/
+}
