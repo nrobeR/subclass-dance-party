@@ -5,10 +5,10 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  background-image:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnQqiC0YjdtgXruI-TAvfKgiATalghBs3i97li9a3WYMYRVgbBMQ);
+  background-image:url(http://www.thinksnaps.com/wp-content/uploads/2014/07/Green-Jungle.jpg);
   background-repeat:no-repeat;
   background-position:center;
-  background-size:contain;
+  /*background-size:contain;*/
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -28,17 +28,19 @@ body, a:link, a:visited, a:active{
   /*border:10px solid red;*/
   /*border-radius:10px;*/
   position:absolute;
-  background:url(http://www.pernchumchon.com/wp-content/uploads/2010/10/Pink-Panther-Animal-Cartoon.jpg);
-  width:500px;
-  height:500px;
+  background:url(http://gifgifs.com/animations/creatures-cartoons/cartoon-characters/Elmo_shakes_it.gif);
+  width:4.7%;
+  height:12%;
   /*z-index:1;*/
   /*display:block;*/
 }
 .harddancer{
-  border:10px solid red;
-  border-radius:10px;
+ /* border:10px solid red;
+  border-radius:10px;*/
   position:absolute;
-  background-image:url(http://i.dailymail.co.uk/i/pix/2013/11/11/article-2500617-007F32C500000258-970_306x423.jpg);
+  background-image:url(http://www.savetherhino.org/assets/0000/2425/DTIJ_RHINO_10.jpg);
+  width:50%;
+  height:50%;
   /*background-size: 100px 100px;*/
   /*position: absolute;*/
 }
