@@ -35,12 +35,12 @@ body, a:link, a:visited, a:active{
   /*display:block;*/
 }
 .harddancer{
- /* border:10px solid red;
-  border-radius:10px;*/
+  border:10px solid red;
+  border-radius:10px;
   position:absolute;
-  background-image:url(http://www.savetherhino.org/assets/0000/2425/DTIJ_RHINO_10.jpg);
-  width:50%;
-  height:50%;
+  /*background-image:url(http://www.savetherhino.org/assets/0000/2425/DTIJ_RHINO_10.jpg);*/
+  /*width:50%;*/
+  /*height:50%;*/
   /*background-size: 100px 100px;*/
   /*position: absolute;*/
 }

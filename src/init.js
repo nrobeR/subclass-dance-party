@@ -31,16 +31,14 @@ $(document).ready(function(){
   $(".addHardDancerButton").on("click", function(event){
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
     var dancerMakerFunction = window[dancerMakerFunctionName];
-    // debugger;
+    debugger;
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
-    debugger;
-
-    // var dancer = new dancerMakerFunction(1000,1000,1000);
-
+    // debugger;
+    // dancer.setPosition(100,100);
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
     dancer.$node.on('mouseover',function(event){
@@ -72,15 +70,6 @@ $(document).ready(function(){
         var l = parseInt(origin_left)+Math.random()*100-50;
         group[k].$node.css({top:t});
         group[k].$node.css({left:l});
-        // group[k].$node.css({top:origin_top+Math.random()*10-5});
-        // group[k].$node.css({top:50});
-        // group[k].setPosition(origin_top+Math.random()*10-5,origin_left+Math.random()*10-5);
-        // debugger;
-        // var colorSettings = {
-        //   border:10px solid green;
-        // }
-        // group[k].$node.css({borderColor:color});
-        // debugger;
       }
     }
   })
